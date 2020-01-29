@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EE3131C Communication Systems</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="YouTubePopUp.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="YouTubePopUp.jquery.js"></script>
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        openCity(event, 'zero');
+    });
+</script>
+
+<script type="text/javascript">
+jQuery(function(){
+    jQuery("a.auto_on").YouTubePopUp();
+    jQuery("a.auto_off").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<h3>EE3131C Communication Systems</h3>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'zero')">Home</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'one')">Homework</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'two')">Videos</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'three')">Links</a></li>
+</ul>
+
+<br>Page Updated 11 Jan 2017<br>
+
+<div id="zero" class="tabcontent">
+<br>This page contains updates for EE3131C.  <br>
+If you have any questions or comments, please 
+contact the instructor at: <br>
+<br>
+Mehul Motani <br>
+Office: E4-05-18 <br>
+Tel: 6516 6918 <br>
+Email: motani@nus.edu.sg <br>
+Web: https://www.ece.nus.edu.sg/stfpage/motani/ <br>
+</div>
+
+<div id="one" class="tabcontent">
+  <h3>Homework</h3>
+
+<ul>
+<li>Problem Set 0 (IVLE Workbin): Practice questions, Not Due 
+<li>Read Probability Handout (IVLE workbin)
+<li>Read Fourier Transform Handout (IVLE workbin)
+<li>Problem Sets 1 and 2: Due Monday 13 Feb 2017 11:59pm
+<li>Check out videos and links on Shannon/AM/FM
+<li> Read AM and FM Handouts (IVLE workbin)
+<li>Problem Set 3: Due Monday 6 March 2017 11:59pm
+<li> Read handout on PCM (IVLE workbin)
+<li>Check out videos and links on PCM
+</ul>
+
+</div>
+
+<div id="two" class="tabcontent">
+<h3>Video Links</h3>
+
+<ul>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=z2Whj_nL-x8">
+Claude Shannon - Father of the Information Age
+</a></li>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=Wq1-Iq9Vm28">
+The Shannon Limit - Bell Labs
+</a></li>
+
+<hr>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=w3M4cqAMWQs">
+AM and FM Radio Explained
+</a></li>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=D65KXwfDs3s">
+How AM and FM Works
+</a></li>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=A9qt0JYdvFU">
+Phase Locked Loop Tutorial | PLL Basics
+</a></li>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=e_gTCU2fnD8">
+Envelope Detector for AM Demodulation
+</a></li>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=gfz1FbIOMbs">
+Frequency Modulation - Part I - Basic Principles
+</a></li>
+
+<hr>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=W2-FP7twy8s">
+Digital Audio 101 - Bit Depth, Sampling Rate, Interpolation
+</a></li>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=HqHIOA-Fcuw">
+Digital Audio 102 - PCM, Bit-Rate, Quantisation, Dithering, Nyquist
+</a></li>
+
+<hr>
+
+<li>
+<a class="auto_on" target="_blank" href="https://www.youtube.com/watch?v=HEEnLZV2wGI">
+Layered Protocol Stack - The OSI Model Demystified
+</a></li>
+
+</ul>
+</div>
+
+<div id="three" class="tabcontent">
+  <h3>Web Links</h3>
+
+<ul>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Amplitude_modulation">Amplitude Modulation (Wikipedia)</a>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Single-sideband_modulation">Single & Vestigial Sideband Modulation (Wikipedia)</a>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Frequency_modulation">Frequency Modulation (Wikipedia)</a>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Phase_modulation">Phase Modulation (Wikipedia)</a>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Pulse-code_modulation">Pulse Code Modulation (Wikipedia)</a>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Quantization_(signal_processing)">Quantization (Wikipedia)</a>
+
+
+</ul>
+
+</div>
+
+</div>
+     
+</body>
+</html>
+
+
